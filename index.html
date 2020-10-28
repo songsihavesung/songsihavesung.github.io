@@ -1,0 +1,301 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset=utf-8 />    
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+    
+#font1 {
+  font-size: 9vw;
+  font-style: oblique;
+  color: red;
+  text-shadow: transparent 1px 1px;
+  background: linear-gradient(to right, red, orange , yellow, red, orange, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  
+    }
+    
+.linkfont {
+    color: red;
+    background: linear-gradient(to right, red, orange , yellow, red, orange, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    text-decoration: none;
+    /*text-shadow: violet 1px 1px;*/
+        
+    }
+    
+    
+
+.menu {
+  float:left;
+  width:100%;
+  text-align:center;
+}
+.menu a {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red, orange , yellow, red, orange, yellow, red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, orange , yellow, red, orange, yellow, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, orange , yellow, red, orange, yellow, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red, orange , yellow, red, orange, yellow, red); /* Standard syntax (must be last) */
+  border: 1px solid black;
+  border-radius: 8px;
+  padding:8px;
+  margin-top:7px;
+  margin-bottom: 7px;
+  display:block;
+  width:100%;
+  color: white;
+  text-decoration: none;
+  text-shadow: black 1px 1px; 
+  font-style: oblique;
+}
+
+.menu2 {
+  float:left;
+  width:100%;
+  text-align:center;
+}
+    
+
+    */
+    
+.menu2 a {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, orange , yellow, red, orange, yellow, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange , yellow, red, orange, yellow, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange , yellow, red, orange, yellow, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, red, orange, yellow, red); /* Standard syntax (must be last) */
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    
+    border-radius: 8px;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+.title {
+  float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  /*text-shadow: black 1px 1px;*/
+   background: linear-gradient(to right, red, orange , yellow, red, orange, yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 50px;
+  font-style: oblique;
+}
+    
+.text {
+  float:left;
+  width:100%;
+  text-align:left;
+  background-color:transparent;
+  border: 0px solid black;
+  padding:8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+    
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  margin-right:3px;
+  text-align:center;
+}
+   
+.embed {
+    background:none;
+    float: left;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+        
+    }
+
+.textbox {
+    width: 100%;
+    background: none;
+    color: black;
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+    }
+    
+.textbox2 {
+    width: 100%;
+    background: none;
+ ;;   color: black;
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+    }
+    
+.author {
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    
+    
+    }
+    
+    .gifcontainer {
+    float: left;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    /*padding-left: 10%;
+    padding-right: 10%*/
+    padding-top: 50px;
+    background: white;
+    height: 90%;
+    }
+
+    
+
+
+
+
+
+
+
+    
+
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+
+
+</style>
+</head>
+
+    
+<body style="font-family:sans-serif;color:black;">
+    
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="Y8efvj4y"></script>    
+
+<div style="background-color: transparent;
+            padding:15px;text-align:left;">
+  
+    
+<div id="font1">
+<b>Songs I Have Sung</b>
+</div>
+</div>
+
+<div style="overflow:auto">
+
+ <div class="menu">
+     <a href="https://thingsihaveseen.github.io/connect"><b>Connect</b></a>
+     <a href="https://thingsihaveseen.github.io/archive.html"><b>More Posts</b></a>      
+ </div>
+    
+ 
+    
+
+
+<div class="title">    
+<b>The McBrides</b> 
+    </div>
+<div class="author">   
+<i>10.27.2020 -Michael Stepniak</i> 
+</div> 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="gifcontainer"><iframe width="100%" height="100%"  src="https://www.youtube.com/embed/JBsRHtuNztI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
+<div class="textbox2">
+<p>
+Just for fun, one take, no edits, in my kitchen. For the definitive version of "Arthur McBride" go to <a href="https://www.youtube.com/watch?v=cBGkhPx529g" style="text-decoration: none" target="_blank" class="linkfont"><b>Paul Brady's live version</b></a>, and be prepared to be amazed. 
+<p>
+I'm no Paul Brady, but I do love singing these songs, "The McBrides" as I think of them. There is a conversation between them across time, as they were written over a century apart but both tell the story of a McBride (Arthur and Willie, respectively) who confronts the horrors of British imperialism and war in France as an every day working class Irish or Scots person. Although Arthur and his cousin avoid a fate, at least for one more day, as one more number in ruling class's ware machine, Willie does not.
+<p>
+The temporal nature of the dialogue between these two compositions continues today, as the stories of both Arthur and Willie remain relevant to the working class and oppressed people across the globe, especially with relation to the violence of American empire. 
+<p>
+The United States has conducted 70 years of endless war, terror campaigns, anti-democratic support for oppressive regimes, economic sanctions that amount to crimes against humanity, secret wars and political assassinations against Korea, Vietnam, Cambodia, Cuba, Chile, Panama, Bolivia, Argentina (really all of Latin America), Iran, Iraq, Afghanistan, Palestine (really all of the Middle East), as well as Ghana, Somalia, Niger, Kenya (really,all over Africa) and many other places, against many other peoples.
+<p>
+The U.S. government has committed these international crimes in addition to the country's original sins of slavery on such a massive, industrialized scale as the world had never seen, and the genocide of the Indigenous Peoples of the North American continent. These crimes against Black Americans and Indigenous Peoples continue today as the government not only continues to refuse reparations, but actively works to support the murder and oppression of the very people upon whose sorrow and death much of the wealth in the U.S. was built.
+<p>
+Internally, the savage cruelty of U.S. capitalism does not abate. In this new gilded age, where the wealthiest Americans hoard wealth and power to a degree not seen in history, while demanding that the working class be sacrificed to Covid-19, much in the same manner is being perpetrated in the U.K., on the alter of the barbaric, naked lust for raw power and wealth by the ruling class.
+<p>
+It is in this world, a world not much changed since the early days of European colonialism or the birth of the United States, that the themes of Arthur and Willie McBride speak to us, of rebellion and sorrow. These songs are not just Irish or Scots, but should be sung by the oppressed, the poor, and the working class around the globe. They are songs for us to continue our struggle and our fight, and to mourn our dead by.
+<p>
+#SolidarityForever #BlackLivesMatter #EndSARS #GlobalSolidarityPalestine
+<p>
+</div>
+ 
+</div>
+
+
+    
+<script>
+    
+ 
+</script>
+</body>
+</html>
