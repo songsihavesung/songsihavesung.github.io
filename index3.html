@@ -79,8 +79,15 @@ body {
   }
 }
     
-.flex-gap > div {
-  margin: 10px;
+.emulated-flex-gap > * {
+  margin: 12px 0 0 12px;
+}
+
+.emulated-flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -12px 0 0 -12px;
+  width: calc(100% + 12px);
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -121,7 +128,7 @@ body {
     
 <div class="content">
     
-    <div class="flex-gap">
+    <div class="emulated-flex-gap">
     
     <div class="row">
   <div class="column">
