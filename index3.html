@@ -9,15 +9,30 @@ body {
 }
 
 .top-container {
-  background-color: #f1f1f1;
+  margin: 0px 5px 0px 5px;
+  background-color: white;
   padding: 30px;
-  text-align: center;
+  text-align: left;
+  color: red;
+  border-style: solid;
+  border-top-width: 3px;
+  border-color:white;
+  border-top-color:red;
+  
 }
 
 .header {
+  margin: 0px 5px 0px 5px;
+  border-style: solid;
+  border-top-width: 3px;
+  border-top-color: red;
+  border-left-color: white;
+  border-right-color: white;
+  border-bottom-color: red;
   padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+  background-color: white;
+  color: red;
+  text-align: left;
 }
 
 
@@ -82,8 +97,8 @@ body {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/*@media screen and (max-width: 600px) {
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
@@ -96,12 +111,12 @@ body {
 <body>
 
 <div class="top-container">
-  <h1>Scroll Down. Seriously, Scroll Down</h1>
-  <p>Scroll down to see the sticky effect.</p>
+  <h1>Click on an image to read something I wrote</h1>
+    <p><b>Pictures of Bandersnatch and Pancake are Dealer's choice posts</b></p>
 </div>
 
 <div class="header" id="myHeader">
-  <h2>My Header</h2>
+  <h2><b>Detroit Idea Factory + other fun things</b></h2>
 </div>
 
 <div style="overflow:auto">
